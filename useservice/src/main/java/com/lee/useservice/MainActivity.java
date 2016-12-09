@@ -13,6 +13,7 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import com.lee.permissionsdemo.IMyAidlInterface;
+import com.lee.permissionsdemo.IeeAidlInterface;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -21,6 +22,8 @@ public class MainActivity extends AppCompatActivity {
     private TextView textView;
 
     private IMyAidlInterface iMyAidlInterface;
+
+    private IeeAidlInterface ieeAidlInterface;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
 
                 final Intent intent = new Intent();
-                intent.setAction("com.lee.permissionsdemo.MyService");
+                intent.setAction("com.lee.permissionsdemo.LeeService");
                 intent.setPackage("com.lee.permissionsdemo");
                 bindService(intent,connection, Service.BIND_AUTO_CREATE);
             }
@@ -53,10 +56,10 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public void onServiceConnected(ComponentName componentName, IBinder iBinder) {
 
-            iMyAidlInterface = IMyAidlInterface.Stub.asInterface(iBinder);
+            ieeAidlInterface = IeeAidlInterface.Stub.asInterface(iBinder);
 
             try {
-                content = iMyAidlInterface.sayHello();
+                content = ieeAidlInterface.basicTypes(10);
                 textView.setText(content);
             } catch (RemoteException e) {
                 e.printStackTrace();

@@ -25,6 +25,14 @@
                 <action android:name="com.lee.permissionsdemo.MyService"></action>
             </intent-filter>
         </service>
+
+        <service
+            android:name=".LeeService"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.lee.permissionsdemo.LeeService"></action>
+            </intent-filter>
+        </service>
     </application>
 
 </manifest>
