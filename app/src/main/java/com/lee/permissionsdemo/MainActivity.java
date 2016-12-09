@@ -25,6 +25,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         button = (Button) findViewById(R.id.button);
         button.setOnClickListener(this);
 
+
+       // startService(new Intent(this,MyService.class));
+
     }
 
     @Override
