@@ -8,6 +8,8 @@
       <module fileurl="file://$PROJECT_DIR$/recycview/recycview.iml" filepath="$PROJECT_DIR$/recycview/recycview.iml" />
       <module fileurl="file://$PROJECT_DIR$/slidedemo/slidedemo.iml" filepath="$PROJECT_DIR$/slidedemo/slidedemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/useservice/useservice.iml" filepath="$PROJECT_DIR$/useservice/useservice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/vr/vr.iml" filepath="$PROJECT_DIR$/vr/vr.iml" />
+      <module fileurl="file://$PROJECT_DIR$/vrdemo/vrdemo.iml" filepath="$PROJECT_DIR$/vrdemo/vrdemo.iml" />
     </modules>
   </component>
 </project>

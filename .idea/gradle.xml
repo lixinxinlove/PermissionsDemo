@@ -14,6 +14,8 @@
             <option value="$PROJECT_DIR$/recycview" />
             <option value="$PROJECT_DIR$/slidedemo" />
             <option value="$PROJECT_DIR$/useservice" />
+            <option value="$PROJECT_DIR$/vr" />
+            <option value="$PROJECT_DIR$/vrdemo" />
           </set>
         </option>
         <option name="myModules">
@@ -24,6 +26,8 @@
             <option value="$PROJECT_DIR$/recycview" />
             <option value="$PROJECT_DIR$/slidedemo" />
             <option value="$PROJECT_DIR$/useservice" />
+            <option value="$PROJECT_DIR$/vr" />
+            <option value="$PROJECT_DIR$/vrdemo" />
           </set>
         </option>
       </GradleProjectSettings>

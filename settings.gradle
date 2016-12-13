@@ -1,1 +1,1 @@
-include ':app', ':useservice', ':recycview', ':calendardemo', ':slidedemo'
+include ':app', ':useservice', ':recycview', ':calendardemo', ':slidedemo', ':vr', ':vrdemo'
