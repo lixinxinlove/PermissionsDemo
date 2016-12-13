@@ -10,6 +10,9 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/calendardemo" />
+            <option value="$PROJECT_DIR$/recycview" />
+            <option value="$PROJECT_DIR$/slidedemo" />
             <option value="$PROJECT_DIR$/useservice" />
           </set>
         </option>
@@ -17,6 +20,9 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/calendardemo" />
+            <option value="$PROJECT_DIR$/recycview" />
+            <option value="$PROJECT_DIR$/slidedemo" />
             <option value="$PROJECT_DIR$/useservice" />
           </set>
         </option>

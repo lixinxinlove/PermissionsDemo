@@ -4,6 +4,9 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/PermissionsDemo.iml" filepath="$PROJECT_DIR$/PermissionsDemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/calendardemo/calendardemo.iml" filepath="$PROJECT_DIR$/calendardemo/calendardemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/recycview/recycview.iml" filepath="$PROJECT_DIR$/recycview/recycview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/slidedemo/slidedemo.iml" filepath="$PROJECT_DIR$/slidedemo/slidedemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/useservice/useservice.iml" filepath="$PROJECT_DIR$/useservice/useservice.iml" />
     </modules>
   </component>
