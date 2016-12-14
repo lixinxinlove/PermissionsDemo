@@ -32,19 +32,21 @@ public class MainActivity extends AppCompatActivity {
         mCalendar.setTime(new Date());
 
         init(mCalendar);
+        mCalendar.add(Calendar.MONTH,1);
+        init(mCalendar);
+        mCalendar.add(Calendar.MONTH,1);
+        init(mCalendar);
     }
 
     private void init(Calendar c) {
         Calendar calendar = Calendar.getInstance();
         calendar.setTime(c.getTime());
-
         int dayTime = calendar.get(Calendar.DAY_OF_MONTH);
         calendar.add(calendar.DATE, -dayTime + 1);
 
         int weekOfMonth = calendar.get(Calendar.DAY_OF_WEEK);
 
         int count = getMonthDays(calendar);
-
         int d = 1;
         int sum = 1;
         while (true) {
