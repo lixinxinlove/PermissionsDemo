@@ -32,10 +32,11 @@ public class MainActivity extends AppCompatActivity {
         mCalendar.setTime(new Date());
 
         init(mCalendar);
-        mCalendar.add(Calendar.MONTH,1);
+        mCalendar.add(Calendar.MONTH, 1);
         init(mCalendar);
-        mCalendar.add(Calendar.MONTH,1);
+        mCalendar.add(Calendar.MONTH, 1);
         init(mCalendar);
+
     }
 
     private void init(Calendar c) {
@@ -49,6 +50,13 @@ public class MainActivity extends AppCompatActivity {
         int count = getMonthDays(calendar);
         int d = 1;
         int sum = 1;
+
+        SimpleDateFormat format = new SimpleDateFormat("yyyy年MM月");
+        String time = format.format(calendar.getTime());
+        TextView tv = new TextView(this);
+        tv.setGravity(Gravity.CENTER_HORIZONTAL);
+        tv.setText(time);
+        rootView.addView(tv);
         while (true) {
             weekView = (LinearLayout) View.inflate(this, R.layout.item_week_view, null);
             for (int j = 1; j <= 7; j++) {
@@ -57,9 +65,7 @@ public class MainActivity extends AppCompatActivity {
                         RelativeLayout.LayoutParams.MATCH_PARENT,
                         RelativeLayout.LayoutParams.MATCH_PARENT, 1.0f));
                 TextView tvDay = (TextView) day.findViewById(tv_day);
-
-                if (j < weekOfMonth  && sum == 1) {
-
+                if (j < weekOfMonth && sum == 1) {
                 } else {
                     tvDay.setText(d + "");
                     d++;
@@ -69,7 +75,6 @@ public class MainActivity extends AppCompatActivity {
                 }
                 weekView.addView(day);
             }
-
             int childCount = weekView.getChildCount();
 
             if (childCount < 7 && sum > 1) {
@@ -85,12 +90,6 @@ public class MainActivity extends AppCompatActivity {
             rootView.addView(weekView);
 
             if (d > count) {
-                SimpleDateFormat format = new SimpleDateFormat("yyyy年MM月");
-                String time = format.format(calendar.getTime());
-                TextView tv = new TextView(this);
-                tv.setGravity(Gravity.CENTER_HORIZONTAL);
-                tv.setText(time);
-                rootView.addView(tv, 0);
                 break;
             }
         }
@@ -99,10 +98,8 @@ public class MainActivity extends AppCompatActivity {
 
     //获取 当前月的天数
     private int getMonthDays(Calendar calendar) {
-
         Calendar mCalendar = Calendar.getInstance();
         mCalendar.setTime(calendar.getTime());
-
         mCalendar.set(Calendar.DATE, 1);
         mCalendar.roll(Calendar.DATE, -1);
         return mCalendar.get(Calendar.DATE) + 1;
